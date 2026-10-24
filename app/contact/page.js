@@ -1,6 +1,7 @@
 import ContactForm from "@/app/_components/ContactForm";
 import Wrapper from "@/app/_components/Wrapper";
 import { ArrowUpRight, CheckCircle2, MessageCircle, Phone } from "lucide-react";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
 const goals = [
   "Starting your first SIP",
@@ -126,6 +127,33 @@ export default function ContactPage() {
             >
               info@investninsure.in
             </a>
+            <nav aria-label="Social media" className="mt-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                Follow us
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href="https://www.facebook.com/GoInvestInsure"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Invest N Insure on Facebook"
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#1877F2] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <FaFacebook size={18} />
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/investninsure.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Invest N Insure on Instagram"
+                  className="inline-flex items-center gap-2 rounded-lg bg-linear-to-tr from-[#FEDA75] via-[#D62976] to-[#4F5BD5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <FaInstagram size={18} />
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </nav>
             <p className="mt-10 text-2xl font-semibold italic text-(--gold)">
               Invest. Protect. Thrive.
             </p>

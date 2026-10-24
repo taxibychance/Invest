@@ -1,7 +1,8 @@
 import React from "react";
-import { ArrowUpRight, CircleDollarSign, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -80,6 +81,33 @@ export default function Footer() {
                 <span>H-1/43A, Mahavir Enclave,
                   Palam, New Delhi - 110045</span>
               </p>
+            </div>
+            <div className="mt-7">
+              <h2 className="text-sm font-semibold uppercase tracking-[0.16em]">
+                Follow us
+              </h2>
+              <nav aria-label="Social media" className="mt-4 flex gap-3">
+                <a
+                  href="https://www.facebook.com/GoInvestInsure"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Invest N Insure on Facebook"
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#1877F2] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <FaFacebook size={18} />
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/investninsure.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Invest N Insure on Instagram"
+                  className="inline-flex items-center gap-2 rounded-lg bg-linear-to-tr from-[#FEDA75] via-[#D62976] to-[#4F5BD5] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <FaInstagram size={18} />
+                  <span>Instagram</span>
+                </a>
+              </nav>
             </div>
           </div>
         </div>
